@@ -2,10 +2,10 @@ const apiKey = "RedouuOnTOP";
 
 function updateStatistics() {
     Promise.all([
-        fetch(`http://51.81.42.10:2334/cpu_usage?key=${apiKey}`).then(res => res.json()),
-        fetch(`http://51.81.42.10:2334/mem_usage?key=${apiKey}`).then(res => res.json()),
-        fetch(`http://51.81.42.10:2334/disk_usage?key=${apiKey}`).then(res => res.json()),
-        fetch(`http://51.81.42.10:2334/net_usage?key=${apiKey}`).then(res => res.json())
+        fetch(`http://51.81.**.**:2334/cpu_usage?key=${apiKey}`).then(res => res.json()),
+        fetch(`http://51.81.**.**:2334/mem_usage?key=${apiKey}`).then(res => res.json()),
+        fetch(`http://51.81.**.**:2334/disk_usage?key=${apiKey}`).then(res => res.json()),
+        fetch(`http://51.81.**.**:2334/net_usage?key=${apiKey}`).then(res => res.json())
     ])
     .then(([cpuData, memData, diskData, netData]) => {
         if (!cpuData.error) {
